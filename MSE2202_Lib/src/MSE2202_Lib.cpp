@@ -50,7 +50,15 @@ void Motion::driveBegin(char cDriveID[2], int iLeftMotorPin1, int iLeftMotorPin2
 		else if(cDriveID[1] == '2')
 		{
 			c_driveID = 2;
-		}		
+		}	
+		else if(cDriveID[1] == '3')
+		{
+			c_driveID = 3;
+		}
+		else if(cDriveID[1] == '4')
+		{
+			c_driveID = 4;
+		}
 		else
 		{
 			Serial.printf("Incorrect ID Designator number %s\n", cDriveID);
